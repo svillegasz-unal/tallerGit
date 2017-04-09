@@ -17,7 +17,7 @@
     <?php foreach($profesores as $profesor): ?>
     <tr>
       <td>
-        <a href="<?php echo base_url(); ?>profesores/profesor/<?= $profesor->cedula ?>" class="btn btn-default">Modificar</a>
+        <a href="<?php echo base_url(); ?>profesores/profesor/<?= $profesor->cedula ?>/" class="btn btn-default">Modificar</a>
       </td>
       <td><?= $profesor->cedula ?></td>
       <td><?= html_escape($profesor->nombre) ?></td>

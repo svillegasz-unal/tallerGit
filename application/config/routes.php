@@ -56,4 +56,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['profesores/registrar/']['get'] = 'Profesores/registrar';
 $route['profesores/registrar']['post'] = 'Profesores/submit';
 $route['profesores/listar/'] = 'Granjeros/listar';
-$route['profesores/profesor/(:num)'] = 'Profesores/mostrar/$1';
+$route['profesores/profesor/(:num)']['get'] = 'Profesores/mostrar/$1';
+$route['profesores/profesor/(:num)']['post'] = 'Profesores/actualizar/$1';
+
