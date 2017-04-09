@@ -15,6 +15,9 @@ class Profesor extends CI_Model {
         $this->load->database();
     }
 
+    public function get_all(){
+        $query = $this->db->get('profesor');
+        return $query->result();
+    }
 
-    
 }

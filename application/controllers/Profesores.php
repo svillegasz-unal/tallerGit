@@ -8,7 +8,15 @@ class Profesores extends CI_Controller
 
     #TODO caso de uso 1
 
-    #TODO caso de uso 2
+    public function listar()
+    {
+        $this->load->model('Profesor');
+        $profesores = $this->Profesor->get_all();
+        $data = array();
+        $data['title'] = 'Listar profesores';
+        $data['profesores'] = $profesores;
+        load_view('listar_profesores', $data);
+    }
 
     #TODO caso de uso 3
     
